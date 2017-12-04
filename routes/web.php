@@ -7,14 +7,14 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index');
-
-Route::group(['middleware' => 'auth'], function(){
-    Route::get('/profile/{slug}', [
-        'uses' => 'ProfilesController@index',
-        'as' => 'profile'
-    ]);
-
+Route::get('/home', 'HomeController@index');          // Kind of nice style here, from kati,
+                                                      // Note, the importance of focussing on
+Route::group(['middleware' => 'auth'], function(){    // problems of importance, and binning academic
+    Route::get('/profile/{slug}', [                   // learning; learn vastly more by solving
+        'uses' => 'ProfilesController@index',         // problems that matter. Ready to do that now.
+        'as' => 'profile'                             // Little reason to dally in learning;
+    ]);                                               // not much of direct relevance left to learn
+                                                      // from laracasts at this point.
     Route::get('/profile/edit/profile', [
         'uses' => 'ProfilesController@edit',
         'as' => 'profile.edit'

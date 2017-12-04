@@ -1,0 +1,29 @@
+
+
+Questions:
+
+-- Aim: just read code here, compare styles with Ways' forum.
+
+-- Qu:  How has Kati implemented the api for vue?
+-- Ans: There isn't one!
+        Vue here is just used as js wrapper to provide behaviour,
+        and here, does not mean any ajax or spa.
+
+
+-- See how easy it is to get confused due to multiple architectures.
+   What a time sink.
+
+-- Suggest measure time spent working on real needs of app,
+   vs. exploring, then - 
+   1) What is that proportion.  2) What should it be.
+
+
+Note: have removed a generators (scaffold) package that has disappeared off of kati's github and was causing composer install to fail; since it was just a scaffold/generator command it probably won't matter being absent.
+
+
+
+
+
+
+
+ 
